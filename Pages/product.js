@@ -16,39 +16,39 @@ closeShopping.addEventListener('click', ()=>{
 let products = [
     {
         id: 1,
-        name: 'PRODUCT NAME 1',
-        image: '1.PNG',
-        price: 120000
+        name: 'Cabbage',
+        image: '1.jpg',
+        price: 120
     },
     {
         id: 2,
-        name: 'PRODUCT NAME 2',
-        image: '2.PNG',
-        price: 120000
+        name: 'Tomatoes',
+        image: '2.jpg',
+        price: 20
     },
     {
         id: 3,
-        name: 'PRODUCT NAME 3',
-        image: '3.PNG',
-        price: 220000
+        name: 'Water Melon',
+        image: '3.jpg',
+        price: 220
     },
     {
         id: 4,
-        name: 'PRODUCT NAME 4',
-        image: '4.PNG',
-        price: 123000
+        name: 'Kales',
+        image: '4.jpg',
+        price: 100
     },
     {
         id: 5,
-        name: 'PRODUCT NAME 5',
-        image: '5.PNG',
-        price: 320000
+        name: 'Fish',
+        image: '5.jpg',
+        price: 150
     },
     {
         id: 6,
-        name: 'PRODUCT NAME 6',
-        image: '6.PNG',
-        price: 120000
+        name: 'Meat',
+        image: '6.jpg',
+        price: 200
     }
 ];
 let listCards  = [];
@@ -57,9 +57,9 @@ function initApp(){
         let newDiv = document.createElement('div');
         newDiv.classList.add('item');
         newDiv.innerHTML = `
-            <img src="image/${value.image}">
+            <img src="images/${value.image}">
             <div class="title">${value.name}</div>
-            <div class="price">${value.price.toLocaleString()}</div>
+            <div class="price">KSH.${value.price.toLocaleString()}</div>
             <button onclick="addToCard(${key})">Add To Card</button>`;
         list.appendChild(newDiv);
     })
@@ -83,7 +83,7 @@ function reloadCard(){
         if(value != null){
             let newDiv = document.createElement('li');
             newDiv.innerHTML = `
-                <div><img src="image/${value.image}"/></div>
+                <div><img src="images/${value.image}"/></div>
                 <div>${value.name}</div>
                 <div>${value.price.toLocaleString()}</div>
                 <div>

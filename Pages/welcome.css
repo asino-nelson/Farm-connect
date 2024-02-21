@@ -1,4 +1,6 @@
 body {
+    background: url(images/hero.png) no-repeat;
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -8,15 +10,37 @@ body {
   
   .container {
     display: flex;
+    gap: 60px;
   }
   
   .card {
     border: 1px solid #ccc;
+    background-color: rgba(126, 229, 126, 0.524);
     border-radius: 8px;
     padding: 20px;
     margin: 10px;
     cursor: pointer;
     transition: transform 0.3s;
+  }
+
+  a{
+    color: white;
+    text-decoration: none;
+  }
+
+  img{
+    border-radius: 5px;
+    
+  }
+
+  button{
+    cursor: pointer;
+    padding: 25px 30px;
+    width: 100%;
+    background-color: green;
+    outline: none;
+    border: none;
+    border-radius: 5px;
   }
   
   .card:hover {
