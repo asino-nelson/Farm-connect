@@ -48,3 +48,8 @@ var swiper = new Swiper(".review-slider", {
     },
   },
 });
+
+function farmer(){
+  window.location.assign("addProduct.html")
+ 
+}
